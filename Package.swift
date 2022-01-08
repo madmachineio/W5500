@@ -21,7 +21,9 @@ let package = Package(
             dependencies: ["SwiftIO", "CW5500"]),
         .target(
             name: "CW5500",
-            dependencies: ["CSwiftIO"]),
+            dependencies: [
+                .product(name: "CSwiftIO", package: "SwiftIO"),
+            ]),
         .testTarget(
             name: "W5500Tests",
             dependencies: ["W5500"]),
