@@ -1,5 +1,6 @@
+#include "register.h"
+
 #include "wizchip_conf.h"
-#include "w5500_register.h"
 
 #include "swift_gpio.h"
 #include "swift_spi.h"
