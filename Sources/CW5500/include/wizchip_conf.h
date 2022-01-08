@@ -71,6 +71,8 @@ extern "C" {
 #define W5300						5300
 #define W5500						5500
 
+#define _WIZCHIP_             5500 
+
 #ifndef _WIZCHIP_
 #define _WIZCHIP_                      W5500   // W5100, W5100S, W5200, W5300, W5500
 #endif
@@ -154,7 +156,7 @@ extern "C" {
 #endif
 //A20150601 : Define the unit of IO DATA.   
    typedef   uint8_t   iodata_t;
-   #include "W5500/w5500.h"
+   #include "../W5500/w5500.h"
 #elif ( _WIZCHIP_ == W5300)
    #define _WIZCHIP_ID_                 "W5300\0"
 /**
