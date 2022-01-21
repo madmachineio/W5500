@@ -18,7 +18,7 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "W5500",
-            dependencies: ["SwiftIO", "CW5500"]),
+            dependencies: ["SwiftIO", "CW5500",]),
         .target(
             name: "CW5500",
             dependencies: [

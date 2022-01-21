@@ -7,7 +7,7 @@
 
 
 
-void w5500_register(void *spi, void *gpio);
+void w5500_wrap_register(void *spi, void *gpio);
 
 
 
