@@ -77,6 +77,7 @@ final public class W5500 {
 
         netInfo.dhcp = NETINFO_STATIC
 
+        print("write netinfo: \(netInfo)")
         wizchip_setnetinfo(&netInfo)
     }
 
@@ -84,8 +85,7 @@ final public class W5500 {
         var verifyInfo = wiz_NetInfo()
 
         wizchip_getnetinfo(&verifyInfo)
-
-        print(verifyInfo)
+        print("read netinfo: \(verifyInfo)")
     }
 
 
